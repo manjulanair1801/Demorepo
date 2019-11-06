@@ -1,0 +1,25 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "altText",
+    "baseProduct",
+    "code",
+    "colorName",
+    "galleryImageList",
+    "itemType",
+    "lscoBreadcrumbs",
+    "maxOrderQuantity",
+    "minOrderQuantity",
+    "multidimensional",
+    "name",
+    "purchasable",
+    "seoMetaData",
+    "url",
+    "variantMatrix",
+    "variantOptions"
+  ]
+}  

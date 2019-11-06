@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="20.156189">
+<testcase classname="Login Related Hybris API" name="HEAD-103, HEAD-785 - Create registered user with optin" time="15.535424">
+<system-out><![CDATA[Given User generates anon auth token for "US"...............................passed
+Given User creates registered user with optin for "US"......................passed
+Given User creates registered user with invalid mailid for "US".............passed
+Given User creates registered user with same mailid and password for "US"...passed
+Then User login using the new registered mailID for "US"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Related Hybris API" name="[Hybris] - Employee Registration - Login and Post processor" time="4.620765">
+<system-out><![CDATA[Given User generates anon auth token for "US"...............................passed
+Then Validate successful Employee log in for "US"...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

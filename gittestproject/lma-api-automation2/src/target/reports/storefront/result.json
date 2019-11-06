@@ -1,0 +1,235 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "HEAD-103, HEAD-785 - Create registered user with optin",
+        "description": "",
+        "id": "login-related-hybris-api;head-103,-head-785---create-registered-user-with-optin;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2766904140,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.writeTestRailRunReport(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4995626094,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User generates anon auth token for \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginValidationSteps.generateAnonAuth(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3078267006,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User creates registered user with optin for \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 45
+                }
+              ],
+              "location": "LoginValidationSteps.createRegUserWithOptIn(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1513780597,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User creates registered user with invalid mailid for \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 54
+                }
+              ],
+              "location": "LoginValidationSteps.createRegUserWithInvalidMailID(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1563328745,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User creates registered user with same mailid and password for \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 64
+                }
+              ],
+              "location": "LoginValidationSteps.createRegUserWithSameIDPWD(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1617516993,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User login using the new registered mailID for \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 48
+                }
+              ],
+              "location": "LoginValidationSteps.loginUsingNewmailID(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Regression"
+          },
+          {
+            "line": 3,
+            "name": "@HEAD-103"
+          },
+          {
+            "line": 3,
+            "name": "@HEAD-785"
+          },
+          {
+            "line": 3,
+            "name": "@HEAD-356"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 22,
+            "value": "# |GB|"
+          }
+        ],
+        "line": 23,
+        "name": "[Hybris] - Employee Registration - Login and Post processor",
+        "description": "",
+        "id": "login-related-hybris-api;[hybris]---employee-registration---login-and-post-processor;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1355498759,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.writeTestRailRunReport(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1672217997,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User generates anon auth token for \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginValidationSteps.generateAnonAuth(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1593048572,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Validate successful Employee log in for \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 41
+                }
+              ],
+              "location": "LoginValidationSteps.empLogin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@Regression"
+          },
+          {
+            "line": 16,
+            "name": "@HEAD-750"
+          }
+        ]
+      }
+    ],
+    "name": "Login Related Hybris API",
+    "description": "",
+    "id": "login-related-hybris-api",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/LoginValidation.feature"
+  }
+]
